@@ -1,9 +1,13 @@
 # robot_localization
 wheel Odometry+IMUによるekfを用いた自己位置補正のノードである
 
-# 使い方
-このノードは既存のリポジトリであるが、turtlebot3を用いたodometry+IMUの位置補正のために自分でlaunchを作成する必要があったため、作成した
+#インストール方法
+基本的にはエラー内容を見ながら、足りないパッケージに関してはapt installで行えればよい
 
+ただ、geographiclibやccpam?みたいなものはライブラリだったりするのでlibをつけてaptすること
+
+# 使い方
+このノードは[既存のリポジトリ](https://github.com/cra-ros-pkg/robot_localization)であるが、turtlebot3を用いたodometry+IMUの位置補正のために自分でlaunchを作成する必要があったため、作成した
   ```shell
   $ roslaunch robot_localization robot_localization.launch
   ```
