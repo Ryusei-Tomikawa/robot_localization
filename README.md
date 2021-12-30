@@ -13,6 +13,8 @@ wheel Odometry+IMUによるekfを用いた自己位置補正のノードであ�
   ```
   これを用いれば,topic名で"/fusion/odom"がpublishされるのでこの値が位置補正後のロボット位置である
   
+  [robot_localization 公式サイト](http://docs.ros.org/en/kinetic/api/robot_localization/html/state_estimation_nodes.html#ekf-localization-node)を見ればパラメータに関してよくわかるので興味があれば見ておくこと
+  
   ※注意
   以下のコマンドをやってみた際に、"odom"と比較すると初期時は、poseとorientationに関しては同等であるが,twistに関してはなぜかうまくいってない...
   今後修正する必要あり？
