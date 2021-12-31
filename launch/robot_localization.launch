@@ -28,12 +28,18 @@
         <param name = "imu0_differential" value = "false" />
         <param name = "imu0_relative" value = "false" />
         <param name = "imu0_queue_size" value = "10" />
-        <param name = "imu0_remove_gravitational_acceleration" value = "true" />
+        <param name = "imu0_remove_gravitational_acceleration" value = "false" />
         <rosparam  param = "imu0_config" > [false,false,false,
                                             false,false,true,
                                             false,false,false,
                                             false,false,true,
                                             true,false,false] </rosparam>
+
+        <!-- #        [x_pos   , y_pos    , z_pos,
+        #         roll    , pitch    , yaw,
+        #         x_vel   , y_vel    , z_vel,
+        #         roll_vel, pitch_vel, yaw_vel,
+        #         x_accel , y_accel  , z_accel] -->
         <param name = "print_diagnostics" value = "true" />
         <param name = "debug" value = "false" />
         <param name = "debug_out_file" value = "debug_odom_ekf.txt" />
